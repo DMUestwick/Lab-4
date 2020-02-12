@@ -5,20 +5,53 @@
 
 body {
   background: #fcc;
-} 
+}
 
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav a {
+  padding: 10px;
+}
+#dropbtn {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border: 1px solid gray;
+
+}
+.hide {
+  display: none;
+}
 
 
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
+
+
   /* applies to screens wider than 499px */
-  
+
+
   body {
     background: #cfc;
-  } 
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #dropbtn {
+    display: none;
+  }
+
 }
+
 
 
 
@@ -30,5 +63,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
